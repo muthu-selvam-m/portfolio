@@ -17,17 +17,26 @@ export default function Navbar() {
 
       // Determine active section
       const sections = ["projects", "skills", "certificates", "about", "contact"];
-      const scrollPosition = window.scrollY + 200;
+      let current = "";
 
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {
-          const top = el.offsetTop;
-          const height = el.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section);
+          const rect = el.getBoundingClientRect();
+          // Consider section active if it's in the top part of the viewport
+          if (rect.top <= 250 && rect.bottom >= 250) {
+            current = section;
           }
         }
+      }
+
+      // Special case: if we are at the bottom of the page, highlight the last section
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+        current = "contact";
+      }
+
+      if (current) {
+        setActiveSection(current);
       }
     };
 
@@ -62,6 +71,7 @@ export default function Navbar() {
             <a
               key={link.id}
               href={link.href}
+              onClick={() => setActiveSection(link.id)}
               className={`font-nav-item transition-all pb-1 ${
                 activeSection === link.id
                   ? "text-primary font-bold"

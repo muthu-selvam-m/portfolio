@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[800px] flex items-center overflow-hidden bg-gradient-to-br from-background to-surface pt-24 pb-16 md:py-0">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-to-br from-background to-surface pt-24 pb-16 md:py-0">
       <div className="max-w-container-max mx-auto px-margin-x w-full grid md:grid-cols-2 gap-gutter items-center relative z-10">
         
         {/* Left Column */}
@@ -52,7 +52,7 @@ export default function Hero() {
               {/* Dashboard Screenshot */}
               <Image
                 alt="Dashboard Mockup"
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[350px] md:h-[450px] object-cover object-top"
                 src="/dashboard_mockup.png"
                 width={800}
                 height={500}
