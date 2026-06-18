@@ -5,7 +5,7 @@ export default function Footer() {
     { name: "LinkedIn", href: "https://www.linkedin.com/in/muthu-selvam-m-575219390/?skipRedirect=true" },
     { name: "GitHub", href: "https://github.com/muthuselvam-1125" },
     { name: "Twitter", href: "https://twitter.com" },
-    { name: "Email", href: "mailto:muthuselvam948958@gmail.com" },
+    { name: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=muthuselvam948958@gmail.com" },
   ];
 
   return (

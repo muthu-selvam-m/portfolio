@@ -82,7 +82,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:muthuselvam948958@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=muthuselvam948958@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2.5 rounded-lg font-nav-item hover:from-blue-500 hover:to-indigo-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all active:scale-95 cursor-pointer inline-block"
           >
             Hire Me
@@ -125,7 +127,9 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="mailto:muthuselvam948958@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=muthuselvam948958@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white w-full py-3 rounded-lg font-nav-item hover:from-blue-500 hover:to-indigo-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all active:scale-95 mt-2 cursor-pointer text-center block"
           >
             Hire Me

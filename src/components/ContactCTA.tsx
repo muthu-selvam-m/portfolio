@@ -19,12 +19,9 @@ export default function ContactCTA() {
           </p>
           
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center pt-8">
-            <a
-              href="mailto:muthuselvam948958@gmail.com"
-              className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-10 py-4 rounded-xl font-headline-md text-headline-md hover:from-blue-500 hover:to-indigo-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all active:scale-95 shadow-xl inline-block cursor-pointer font-bold"
-            >
-              Contact Me
-            </a>
+            <span className="font-headline-md text-headline-md text-on-surface font-bold">
+              Contact Me:
+            </span>
             
             {/* Social icons */}
             <div className="flex gap-4">
@@ -52,7 +49,9 @@ export default function ContactCTA() {
               </a>
               <a
                 className="w-12 h-12 rounded-full border border-white/30 flex items-center justify-center hover:bg-white/20 transition-all text-white cursor-pointer"
-                href="mailto:muthuselvam948958@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=muthuselvam948958@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Email"
               >
                 <span className="material-symbols-outlined text-2xl">mail</span>
