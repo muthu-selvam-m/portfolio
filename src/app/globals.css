@@ -165,9 +165,9 @@ body {
   line-height: 1;
 }
 
-/* Smooth Scrolling */
+/* Smooth Scrolling disabled for Lenis */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 
 /* Custom Scrollbar */
